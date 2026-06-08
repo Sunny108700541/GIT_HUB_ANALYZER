@@ -31,9 +31,9 @@ class Database {
   async testConnection() {
     try {
       await this.query("SELECT 1");
-      console.log("✅ MySQL connected successfully");
+      console.log("MySQL connected successfully");
     } catch (error) {
-      console.error("❌ MySQL connection failed:", error.message);
+      console.error(" MySQL connection failed:", error.message);
       process.exit(1);
     }
   }
