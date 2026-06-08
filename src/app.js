@@ -42,8 +42,8 @@ async function startServer() {
   await db.testConnection();
   await initializeDatabase();
   app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-    console.log(`📖 API docs available at http://localhost:${PORT}/`);
+    console.log(` Server running on http://localhost:${PORT}`);
+    console.log(` API docs available at http://localhost:${PORT}/`);
   });
 }
 
